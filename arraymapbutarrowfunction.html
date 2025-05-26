@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Map</title>
+</head>
+<body>
+<p id="nothingchanged"></p>
+<p id="nothingchangedbutwithASCENDINGWHAAA"></p>
+<p id="nothingchangedbutwithDESCENDINGWHAAA"></p>
+<p id="commentsabouturmomorsomethinglikethat"></p>
+<p id="ASCENDINGWHAAAAAA"></p>
+<p id="DESCENDINGWOAH"></p>
+<script>
+var randomnumbersigotfromwalmart = [5,315,6,2,3,23,62,63];
+document.getElementById("nothingchanged").innerHTML = "No changes: " + randomnumbersigotfromwalmart;
+
+randomnumbersigotfromwalmart.sort(function(a,b){return a - b});
+document.getElementById("nothingchangedbutwithASCENDINGWHAAA").innerHTML = "Ascending: " + randomnumbersigotfromwalmart;
+
+randomnumbersigotfromwalmart.sort(function(a,b){return b - a});
+document.getElementById("nothingchangedbutwithDESCENDINGWHAAA").innerHTML =  "Descending: " + randomnumbersigotfromwalmart;
+
+thisisafuctionignoreit = (sigmaboy) => sigmaboy + 1;
+
+var whaaaamorenumberquestionmarkquestionmarkquestionmark = randomnumbersigotfromwalmart.map(thisisafuctionignoreit)
+document.getElementById("commentsabouturmomorsomethinglikethat").innerHTML = "Array Map: " + whaaaamorenumberquestionmarkquestionmarkquestionmark;
+
+whaaaamorenumberquestionmarkquestionmarkquestionmark.sort(function(a,b){return a - b});
+document.getElementById("ASCENDINGWHAAAAAA").innerHTML =  "Ascending & Array Map: " +whaaaamorenumberquestionmarkquestionmarkquestionmark;
+
+whaaaamorenumberquestionmarkquestionmarkquestionmark.sort(function(a,b){return b - a});
+document.getElementById("DESCENDINGWOAH").innerHTML = "Descending & Array Map: " + whaaaamorenumberquestionmarkquestionmarkquestionmark;
+</script>
+</body>
+</html>
